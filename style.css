@@ -1,0 +1,114 @@
+/* Custom Properties */
+:root {
+  --color-text-white: #ffffff;
+  --color-text-gray: #848586;
+  --color-text-black: #0d1821;
+}
+
+/* Resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Layout Utilities */
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.col {
+  width: 100%;
+}
+
+.logo__icon,
+.main-item__icon {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+}
+
+/* Header/Nav */
+.header {
+  padding: 1em 0;
+}
+
+.header__items {
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav__list {
+  list-style: none;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nav__item {
+  cursor: pointer;
+}
+
+.nav__link {
+  text-decoration: none;
+}
+
+.intro {
+  background-image: url("assets/images/hero.jpg");
+  color: var(--color-text-white);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2em 0;
+  height: 80vh;
+}
+
+.intro__content {
+  width: 50%;
+}
+
+.intro__title {
+  font-size: 4rem;
+  margin-bottom: 0.5em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.intro__text {
+  font-size: 1.8rem;
+}
+
+.main__title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0.5em 0;
+}
+
+.main-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-item__title {
+  font-size: 2rem;
+}
