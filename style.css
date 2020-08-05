@@ -3,6 +3,12 @@
   --color-text-white: #ffffff;
   --color-text-gray: #848586;
   --color-text-black: #0d1821;
+
+  --color-blue: #6F73D2;
+  --color-green: #86A59C;
+  --color-black: #101419;
+  --color-blue-dark: #253C78;
+  --color-bg-white: #F9F1F1;
 }
 
 /* Resets */
@@ -64,6 +70,7 @@ img {
   flex-direction: row;
   justify-content: space-between;
 }
+
 .nav__item {
   cursor: pointer;
 }
@@ -72,8 +79,9 @@ img {
   text-decoration: none;
 }
 
+/* Intro Section */
 .intro {
-  background-image: url("assets/images/hero.jpg");
+  background-image: url("assets/images/hero-alt.jpg");
   color: var(--color-text-white);
   background-position: center;
   background-repeat: no-repeat;
@@ -97,10 +105,15 @@ img {
   font-size: 1.8rem;
 }
 
+/* Main Section */
+.main {
+  padding: 1em 0;
+}
+
 .main__title {
   text-align: center;
   font-size: 2rem;
-  margin: 0.5em 0;
+  margin: 0.25em 0;
 }
 
 .main-item {
@@ -109,6 +122,35 @@ img {
   align-items: center;
 }
 
+.main-item__icon {
+  margin: 1em 0;
+}
+
 .main-item__title {
   font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+
+/* Close Section */
+.close {
+  background-color: var(--color-bg-white);
+  color: var(--color-text-black);
+}
+
+.close__title {
+  text-align: center;
+  font-size: 2rem;
+  margin: .5em 0;
+}
+
+.close__text {
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+
+/* Footer */
+.footer {
+  padding: 1em 0;
+  background-color: var(--color-black);
+  color: var(--color-text-gray);
 }
