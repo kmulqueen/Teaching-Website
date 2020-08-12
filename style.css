@@ -6,6 +6,7 @@
 
   --color-blue: #6F73D2;
   --color-green: #86A59C;
+  --color-mint: #70EE9C;
   --color-black: #101419;
   --color-blue-dark: #253C78;
   --color-bg-white: #F9F1F1;
@@ -95,11 +96,40 @@ img {
 }
 
 .intro__title {
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 0.5em;
   line-height: 1;
   text-transform: uppercase;
+  display: flex;
 }
+
+.intro__title--accent {
+  color: var(--color-mint);
+  margin-left: .3em;
+}
+
+/* .intro__title--accent::before {
+  content: 'Drums';
+  animation: animate infinite 8s;
+}
+
+@keyframes animate {
+  0% {
+    content: 'Drums'
+  }
+
+  25% {
+    content: 'Artistic Expression'
+  }
+
+  50% {
+    content: 'The Language of Music'
+  }
+
+  75% {
+    content: 'To Have Fun'
+  }
+} */
 
 .intro__text {
   font-size: 1.8rem;
@@ -129,6 +159,41 @@ img {
 .main-item__title {
   font-size: 2rem;
   margin-bottom: 0.5em;
+}
+
+/* Reviews Section */
+.reviews__title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.review-item {
+  display: flex;
+  margin: 2rem 0;
+  /* border: 1px solid; */
+}
+
+.review-item__img {
+  border-radius: 50%;
+}
+
+.review-item__content {
+  font-size: 1.3rem;
+  padding: 0 .75em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.review-item__name::before {
+  content: "";
+  display: inline-block;
+  height: 0.2rem;
+  width: 1.25rem;
+  background: var(--color-blue-dark);
+  margin-right: .5em;
+  position: relative;
+  bottom: .2em;
 }
 
 /* Close Section */
